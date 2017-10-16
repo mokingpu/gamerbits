@@ -12,13 +12,13 @@ $(document).ready(function() {
 
 	//Parallax
 
-	var parLogo = document.getElementById('parLogo');
-	var parallax = new Parallax(parLogo);
+	// var parLogo = document.getElementById('parLogo');
+	// var parallax = new Parallax(parLogo);
 
 
 	// Owl Carousel
 
-	$(".owl-carousel").owlCarousel({
+	$(".owl-1").owlCarousel({
 		margin: 20,
 		loop: true,
 		center: true,
@@ -42,11 +42,12 @@ $(document).ready(function() {
     }
 	});
 
-  $(".end-carousel").owlCarousel({
+  $(".owl-2").owlCarousel({
     margin: 0,
     loop: true,
     center: true,
     dots: true,
+    nav: true,
     autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 800,
@@ -66,11 +67,11 @@ $(document).ready(function() {
     $('.zaw-div').hide();
     $('.hire-div').hide();
     $('#willPic').css({
-      "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-      "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-      "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+      "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+      "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+      "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
       "transition": "all .25s ease",
-      "border": "3px solid white"
+      "border": "3px solid #3EFF00"
     });
 
     $('.will').click(function(){ 
@@ -79,11 +80,11 @@ $(document).ready(function() {
       $('.hire-div').hide();
       $('.raja-div').hide();
       $('#willPic').css({
-        "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-        "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-        "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+        "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+        "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+        "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
         "transition": "all .25s ease",
-        "border": "3px solid white"
+        "border": "3px solid #3EFF00"
       });
       $('#rajaPic').css({
         "-webkit-box-shadow": "none",
@@ -114,11 +115,11 @@ $(document).ready(function() {
       $('.hire-div').hide();
       $('.raja-div').fadeIn("slow").show();
       $('#rajaPic').css({
-        "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-        "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-        "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+        "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+        "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+        "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
         "transition": "all .25s ease",
-        "border": "3px solid white"
+        "border": "3px solid #3EFF00"
       });
       $('#willPic').css({
         "-webkit-box-shadow": "none",
@@ -149,11 +150,11 @@ $(document).ready(function() {
       $('.hire-div').hide();
       $('.raja-div').hide();
       $('#zawPic').css({
-        "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-        "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-        "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+        "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+        "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+        "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
         "transition": "all .25s ease",
-        "border": "3px solid white"
+        "border": "3px solid #3EFF00"
       });
       $('#willPic').css({
         "-webkit-box-shadow": "none",
@@ -184,11 +185,11 @@ $(document).ready(function() {
       $('.hire-div').fadeIn("slow").show();
       $('.raja-div').hide();
       $('#hirePic').css({
-        "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-        "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-        "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+        "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+        "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+        "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
         "transition": "all .25s ease",
-        "border": "3px solid white"
+        "border": "3px solid #3EFF00"
       });
       $('#willPic').css({
         "-webkit-box-shadow": "none",
@@ -244,12 +245,14 @@ $(document).ready(function() {
 
     $(".test-badge").click(function(){
       $(".timeline-badge").css({
-        "-webkit-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
-        "-moz-box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30);",
-        "box-shadow": "0px 0px 10px 6px rgba(0,0,0,0.30)",
+        "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
+        "-moz-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30);",
+        "box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
         "transition": "all .25s ease",
         "border": "3px solid white"
       });
     });
+
+    $('#endCarousel').carousel()
 
 });

@@ -1,10 +1,10 @@
 @media (max-width: 422px) {
 	.desktop {
-		display: none;
+		display: none !important;
 	}
 
 	.mobile {
-		display: block;
+		display: inline-block !important;
 	}
 
 	.logo-3d-area {
@@ -175,8 +175,7 @@
 	.timeline-title-left-1 {
 	    margin-top: 13px;
 	    color: inherit;
-	    float: right;
-	    text-align: right;
+	    text-align: left;
 	    padding-right: 25px;
 	}
 
@@ -326,6 +325,48 @@
 	.buy-desktop {
 		display: none;
 	}
+
+	.desktop {
+		display: none !important;
+	}
+
+	.badge-right {
+		left: 25px !important;
+	}
+
+	.timeline-right::before {
+		left: 25px !important;
+	}
+
+	.timeline-title-right-1 {
+		padding-left: 40px !important;
+	}
+
+	.cloud-1,
+	.cloud-2,
+	.cloud-3,
+	.cloud-4 {
+		display: none !important;
+	}
+
+	.quote-mark {
+		font-size: 22px;
+	}
+
+	.end-carousel-text {
+	    font-size: 16px;
+	    line-height: 26px;
+	    font-family: 'Kalam', cursive;
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    padding-left: 10px;
+	    padding-right: 30px;
+	}
+
+	.carousel-control.left, 
+	.carousel-control.right {
+		display: none;
+	}
 }
 
 @media (max-width: 241px) {
@@ -367,15 +408,33 @@
 	.buy-text {
 		width: 100%;
 	}
-}
 
-@media (min-width: 1600px) {
 	.desktop {
-		display: block;
+		display: none !important;
 	}
 
 	.mobile {
-		display: none;
+		display: inline-block !important;
+	}
+
+	.cloud-1,
+	.cloud-2,
+	.cloud-3,
+	.cloud-4 {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mobile {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1600px) {
+
+	.mobile {
+		display: none !important;
 	}
 
 	.raja {
