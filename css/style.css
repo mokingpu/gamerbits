@@ -228,7 +228,7 @@ ul {
 .white-button {
 	background: none;
 	border: 1px solid white;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	padding: 10px 20px;
 	color: white;
 	-webkit-transition: all .25s ease;
@@ -248,7 +248,7 @@ ul {
 	background: none;
 	color: black;
 	border: 1px solid black;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	padding: 10px 20px;
 	-webkit-transition: all .25s ease;
 	   -moz-transition: all .25s ease;
@@ -330,6 +330,8 @@ ul {
 .big-pic {
 	width: 400px;
 	margin: auto;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .team {
@@ -351,6 +353,7 @@ ul {
 .years-images {
 	margin-top: 70px;
 	margin-bottom: 70px;
+	text-align: center;
 }
 
 .years-images ul {
@@ -650,37 +653,93 @@ ul {
 .others {
 	position: relative;
 	text-align: center;
+	background: black;
+	border-right: 3px dashed #3EFF00;
+	border-top: 3px dashed #3EFF00;
+	border-bottom: 3px dashed #3EFF00;
+	padding: 20px;
+	overflow: hidden;
 }
 
-.will {
+.diamond {
 	position: absolute;
-    right: 120px;
-    top: -80px;
-    float: right;
+	right: -70px;
+	bottom: -70px;
+	opacity: 0.1;
 }
 
-.raja {
+.others li {
+	display: inline-block;
+	margin: 15px;
+	width: 220px;
+}
+
+.will-img {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.will-img img {
 	position: absolute;
-    right: 40px;
-    top: 160px;
+	top: 5px;
+	left: 5px;
+	width: 140px;
+	height: 140px;    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .raja-img {
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: auto;
 }
 
-.zaw {
+.raja-img img {
 	position: absolute;
-    right: 310px;
-    top: 65px;
+	top: 5px;
+	left: 5px;
+	width: 140px;
+	height: 140px;    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .zaw-img {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.zaw-img img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 140px;
+	height: 140px;    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.hire-img {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.hire-img img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 140px;
+	height: 140px;    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .team-title {
@@ -696,26 +755,12 @@ ul {
 	color: white;
 }
 
-.hire {
-	position: absolute;
-    right: 0px;
-    top: 400px;
-}
-
-.hire-img {
-	width: 210px;
-	height: 210px;
-	border-radius: 50%;
-}
-
 .protocol {
     padding-bottom: 100px;
     position: relative;
     margin-top: 100px;
     margin-bottom: -5px;
 }
-
-
 
 .safe-logos {
 	position: relative;
@@ -1012,9 +1057,10 @@ ul {
     height: 50px;
     line-height: 50px;
     padding-left: 15px;
-    border-radius: 10px;
-    background: #3EFF00;
-    color: black;
+    /* border-radius: 10px; */
+    background: none;
+    border: 1px solid #3EFF00;
+    color: #3EFF00;
     text-align: left;
     font-size: 16px;
     letter-spacing: 0.075em;
@@ -1026,11 +1072,11 @@ ul {
 	width: 150px;
 	height: 150px;
 	line-height: 150px;
-	border-radius: 50%;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	background: white;
 	display: inline-block;
 	margin-left: -20px;
-	border: 5px solid #3EFF00;
 	-webkit-transition: all .25s ease;
 	   -moz-transition: all .25s ease;
 	    -ms-transition: all .25s ease;
@@ -1039,18 +1085,19 @@ ul {
 }
 
 .bitsquare img {
-	margin-top: -10px;
-	width: 120px;
+	width: 100px;
 }
 
 .invaders-img {
-	width: 95px !important;
+	width: 75px !important;
 }
 
 .buy-items:hover .bitsquare {
-	-webkit-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.50);
-    -moz-box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.50);
-    box-shadow: 0px 0px 16px 6px rgba(0,0,0,0.50);
+	-webkit-transform: translateY(-25px);
+	   -moz-transform: translateY(-25px);
+	    -ms-transform: translateY(-25px);
+	     -o-transform: translateY(-25px);
+	        transform: translateY(-25px);
 }
 
 .buy-items {
@@ -1142,7 +1189,7 @@ section::after {
 	border: 5px solid #3EFF00;
     width: 50px !important;
     height: 50px !important;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     line-height: 38px;
 }
 
@@ -1323,4 +1370,14 @@ section::after {
 .cloud-4 {
 	bottom: 150px;
 	right: 120px;
+}
+
+.margin-full {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.team-right-padding-fix {
+	padding-left: 50px;
+	padding-right: 50px;
 }
