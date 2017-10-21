@@ -114,12 +114,8 @@
 	}
 
 	.others {
-	    text-align: center;
-	    background-image: url('../img/team-bg-mobile.png');
-	    width: 100%;
-	    margin-top: 30px;
-	    padding-top: 30px;
-	    padding-bottom: 30px;
+	    border-left: 3px dashed #3EFF00;
+	    margin-top: 40px;
 	}
 
 	.team-bg {
@@ -367,6 +363,16 @@
 	.carousel-control.right {
 		display: none;
 	}
+
+	.margin-full {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.team-right-padding-fix {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media (max-width: 241px) {
@@ -423,6 +429,17 @@
 	.cloud-4 {
 		display: none !important;
 	}
+
+	.others {
+	    border-left: 3px dashed #3EFF00;
+	    margin-top: 40px;
+	}
+
+	.others li {
+	    display: inline-block;
+	    margin: 0px;
+	    width: 185px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -436,58 +453,10 @@
 	.mobile {
 		display: none !important;
 	}
-
-	.raja {
-		position: absolute;
-	    right: -100px;
-	    top: 170px;
-	    float: right;
-	}
-
-	.zaw {
-		position: absolute;
-	    right: 155px;
-	    top: 85px;
-	}
-
-	.hire {
-		position: absolute;
-	    right: -150px;
-	    top: 400px;
-	}
-
-	.will {
-	    position: absolute;
-	    right: -35px;
-	    top: -80px;
-	    float: right;
-	}
 }
 
 @media (min-width: 1920px) {
-	.will {
-	    position: absolute;
-	    right: -175px;
-	    top: -80px;
-	    float: right;
-	}
-
-	.raja {
-	    position: absolute;
-	    right: -300px;
-	    top: 160px;
-	    float: right;
-	}
-
-	.zaw {
-		position: absolute;
-	    right: -10px;
-	    top: 90px;
-	}
-
-	.hire {
-		position: absolute;
-	    right: -310px;
-	    top: 400px;
+	.mobile {
+		display: none !important;
 	}
 }
