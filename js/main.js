@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  $(".se-pre-con").fadeOut("slow");
 	//Scroll
 
 	jQuery.scrollSpeed(100, 800);
@@ -326,26 +327,6 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    // Particles JS
-
-    var count_particles, stats, update;
-    stats = new Stats;
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector('.js-count-particles');
-    update = function() {
-      stats.begin();
-      stats.end();
-      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-
     $(".test-badge").click(function(){
       $(".timeline-badge").css({
         "-webkit-box-shadow": "0px 0px 10px 6px rgba(62,255,0,0.30)",
@@ -356,6 +337,6 @@ $(document).ready(function() {
       });
     });
 
-    $('#endCarousel').carousel()
+    $('#endCarousel').carousel();
 
 });
