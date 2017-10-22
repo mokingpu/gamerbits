@@ -1,6 +1,9 @@
+$(window).on('load', function() {
+  $(".se-pre-con").fadeOut("slow");
+});
+
 $(document).ready(function() {
 
-  $(".se-pre-con").fadeOut("slow");
 	//Scroll
 
 	jQuery.scrollSpeed(100, 800);
