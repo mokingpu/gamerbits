@@ -599,7 +599,6 @@ ul {
 	width: 175px;
 	height: 100px;
 	text-align: center;
-	border-radius: 10px;
 	vertical-align: top;
 	-webkit-transition: all .25s ease;
 	   -moz-transition: all .25s ease;
@@ -665,7 +664,7 @@ ul {
 	position: absolute;
 	right: -70px;
 	bottom: -70px;
-	opacity: 0.1;
+	opacity: 0.3;
 }
 
 .others li {
@@ -1117,10 +1116,9 @@ ul {
   width: 100%;
   height: 50px;
   background-size: 100px 100%;
-  margin-top: -50px;
   top: 0;
-  background-image: -webkit-gradient(linear, 0 0, 10% 100%, color-stop(0.5, #ffffff), color-stop(0.5, rgba(0, 0, 0, .0)));
-  background-image: linear-gradient(15deg, #ffffff 50%, rgba(0, 0, 0, .0) 50%);
+  background-image: -webkit-gradient(linear, 0 0, 10% 100%, color-stop(0.5, #ffffff), color-stop(0.5, black));
+  background-image: linear-gradient(15deg, white 50%, black 50%);
 }
 
 .ss-style-inczigzag-2 {
@@ -1350,7 +1348,7 @@ section::after {
 .cloud-3 img,
 .cloud-4 img {
 	width: 350px;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .cloud-1 {
@@ -1380,4 +1378,16 @@ section::after {
 .team-right-padding-fix {
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../img/Ripple.gif') center no-repeat #000;
 }
